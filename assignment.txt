@@ -1,0 +1,88 @@
+---- DOCKER -----
++
+1.open terminal
+
+docker -v  {VERsion of docker}
+
+docker images {any image present or not}
+
+docker ps  {any container present or not}
+
+docker pull openjdk  {for pulling jdk image}
+
+docker pull python  {for pulling python image}
+
+docker images {show images present}
+
+# FOR RUN
+
+docker run --name JAVA -it -d openjdk
+
+docker ps {container present}
+
+docker exec -it JAVA jshell
+
+# NOW JSHELL IS CREATE
+
+write simple hello world in java
+
+System.out.println("hello world");
+
+
+# FOR EXIT FROM JSHELL
+
+/exit
+
+# DOCKER STOP
+
+docker stop container id
+
+# REMOVE CONTAINER
+
+docker container rm container id
+
+# REMOVE IMAGES
+
+docker images prune
+
+
+
+
+ 
+
+
+
+########## GIT AND GITHUB ##########
+
+git init
+
+git add .
+
+git status
+
+git remote add origin "link of github folder" // agli baar daloge too ye line matt dalna
+
+IF PROMPTED TO AUTHENTICATION
+1. git config --global user.email "you github email id"
+2. git config --global user.name "you github username"
+
+
+git commit -m "First Commit"
+
+git push -u origin master
+
+
+
+
+
+####### VIRTUAL MACHINE #############
+
+touch file.txt
+cat file.txt
+nano fie.txt
+
+ctrl x for exit from nano
+
+scp file.txt vagrant@10.0.2.16:/home/vagrant
+
+
